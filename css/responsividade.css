@@ -1,0 +1,95 @@
+/* RESPONSIVIDADE */
+
+@media (max-width: 1200px) {
+  .container {
+    width: none;
+    max-width: 600px;
+    flex-direction: column;
+  }
+
+  /* NAVBAR */
+
+  .navbar ul {
+    display: none;
+  }
+
+  /* ABOUT */
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about .about-content .content-wrap p {
+    max-width: 700px;
+  }
+
+  .about::before,
+  .about::after {
+    display: none;
+  }
+
+  /* PROJECTS */
+
+  .projects h2::after {
+    width: 600px;
+    background: url("../img/topic-underliner-particle-black.svg") -338px 0 no-repeat;
+    right: 0px;
+    bottom: -10px;
+  }
+
+  .projects ul::before {
+    height: 540px;
+  }
+
+  .projects ul li {
+    padding: 20px;
+    background: url("../img/project-item-responsive-bg.svg") 0 0 no-repeat;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin: 0 60px;
+  }
+
+  /* HEADER */
+
+  .header h1 {
+    font-size: 4em;
+  }
+
+  /* ABOUT */
+
+  .about h2,
+  .projects h2 {
+    font-size: 3em;
+  }
+
+  .about h2::after {
+    background-image: none;
+    width: 100px;
+    background: #fff;
+  }
+
+  /* PROJECTS */
+
+  .projects h2::after {
+    background-image: none;
+    width: 100px;
+    background: #000;
+  }
+
+  .projects ul::before {
+    display: none;
+  }
+
+  .projects ul li {
+    padding: 20px;
+    background-image: none;
+    border: 1px solid #000;
+  }
+
+  .projects ul li::before {
+    display: none;
+  }
+}

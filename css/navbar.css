@@ -1,0 +1,51 @@
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 20px 80px;
+}
+
+.navbar {
+  width: 100%;
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 10px 80px;
+}
+
+.navbar .logo {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  align-self: center;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-self: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover,
+.navbar .logo a:hover {
+  color: #6ff;
+}

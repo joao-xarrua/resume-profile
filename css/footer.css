@@ -1,0 +1,22 @@
+/* FOOTER */
+
+.footer {
+  font-family: "IBM Plex Sans", sans-serif;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  background: #222;
+  color: #fff;
+}
+
+.footer p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer .social-medias a {
+  margin: 0 10px;
+}

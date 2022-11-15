@@ -1,0 +1,169 @@
+/* PROJECTS */
+
+.projects {
+  padding: 60px 0;
+  align-items: flex-end;
+}
+
+.projects h2 {
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  font-size: 4em;
+  text-transform: uppercase;
+  display: flex;
+  position: relative; /* ISSO AQUI É O SEGREDO DO SUCESSO TA */
+  color: #000;
+  max-width: 940px;
+}
+
+.projects h2::after {
+  content: "";
+  position: absolute;
+  width: 960px;
+  height: 10px;
+  background: url("../img/topic-underliner-particle-black.svg") 0 0 no-repeat;
+  right: -20px;
+  bottom: -10px;
+}
+
+.projects ul {
+  margin-top: 80px;
+  display: flex;
+  position: relative;
+}
+
+.projects ul::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 460px;
+  background: #bbb;
+  left: -30px;
+  top: 90px;
+  border-radius: 10px;
+}
+
+.projects ul li {
+  padding: 20px 40px;
+  background: url("../img/project-item-bg.svg") 0 0 no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.projects ul li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  left: -40px;
+  top: 90px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.projects ul li h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.5em;
+  position: relative;
+  display: block;
+}
+
+.projects ul li h3::after {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background: #000;
+  display: block;
+  margin: 10px 0;
+}
+
+.projects ul li p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1em;
+  line-height: 1.5em;
+  position: relative;
+  display: block;
+}
+
+.projects ul li a {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #6ff;
+  background: #000;
+  display: inline-block;
+  position: relative;
+  padding: 3px 16px;
+  margin: 20px 10px 0 0;
+}
+
+.projects ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  bottom: 0;
+  right: 0;
+}
+
+.projects ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid #fff;
+  border-right: 10px solid transparent;
+  left: 0;
+  top: 0;
+}
+
+.projects ul li a:hover {
+  color: #000;
+  background: #6ff;
+}
+
+.projects .btn-cyberpunk {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  background: #6ff;
+  display: inline-block;
+  position: relative;
+  padding: 20px 30px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.projects .btn-cyberpunk::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-bottom: 20px solid #fff;
+  border-left: 20px solid transparent;
+  bottom: -1px;
+  right: -1px;
+}
+
+.projects .btn-cyberpunk::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-bottom: 21px solid #000;
+  border-left: 21px solid transparent;
+  bottom: -1px;
+  right: -1px;
+}
+
+.projects .btn-cyberpunk:hover {
+  color: #6ff;
+  background: #000;
+}

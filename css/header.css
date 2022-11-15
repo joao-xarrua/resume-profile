@@ -1,0 +1,64 @@
+/* HEADER */
+
+.header {
+  width: 100%;
+  background: #222;
+}
+
+.header-content {
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 160px 0;
+  color: #fff;
+}
+
+.header-content span {
+  font-family: "IBM Plex Mono";
+  font-size: 1em;
+  color: #6ff;
+  margin: 20px 0;
+}
+
+.header-content h1 {
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  font-size: 6em;
+  text-transform: uppercase;
+  margin: 20px 0 10px 0;
+  display: flex;
+  position: relative; /* ISSO AQUI É O SEGREDO DO SUCESSO TA */
+  z-index: 1;
+}
+
+.header-content h1::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background: url("../img/squared-particle.png") 0 0 no-repeat;
+  right: 200px;
+  z-index: -1;
+}
+
+.header-content .phrase {
+  font-family: "IBM Plex Sans";
+  font-weight: bold;
+  font-size: 3em;
+  color: #888;
+  text-transform: uppercase;
+  margin: 10px 0 20px 0;
+  z-index: 1;
+}
+
+.header-content p.text {
+  font-family: "IBM Plex Mono";
+  font-size: 1em;
+  max-width: 460px;
+  line-height: 1.5em;
+  margin: 20px 0;
+}
+
+.header-content p.text a {
+  text-decoration: underline;
+  color: #6ff;
+}
