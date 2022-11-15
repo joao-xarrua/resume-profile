@@ -6,6 +6,10 @@
   padding: 60px 0;
 }
 
+.about .about-wrap {
+  flex-direction: column;
+}
+
 .about::before {
   content: "";
   position: absolute;
