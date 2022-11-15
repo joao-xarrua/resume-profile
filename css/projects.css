@@ -3,6 +3,7 @@
 .projects {
   padding: 60px 0;
   align-items: flex-end;
+  flex-direction: column;
 }
 
 .projects h2 {
@@ -30,6 +31,7 @@
   margin-top: 80px;
   display: flex;
   position: relative;
+  flex-direction: column;
 }
 
 .projects ul::before {
