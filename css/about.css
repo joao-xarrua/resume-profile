@@ -90,3 +90,15 @@
 .about .about-content .profile-pic img {
   width: 100%;
 }
+
+.about .mouseDown {
+  font-size: 0.9em; /* CONTROL MOUSE SIZE */
+  border: 2px solid rgba(255, 255, 255, 1);
+  display: block;
+  width: 1.7em;
+  height: 2.8em;
+  border-radius: 0.9em;
+  margin: 0 auto;
+  text-decoration: none;
+  transition: border 0.2s ease-out;
+}

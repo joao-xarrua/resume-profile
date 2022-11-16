@@ -12,7 +12,7 @@
   color: #fff;
 }
 
-.header-content span {
+.header-content .inicial {
   font-family: "IBM Plex Mono";
   font-size: 1em;
   color: #6ff;
@@ -61,4 +61,76 @@
 .header-content p.text a {
   text-decoration: underline;
   color: #6ff;
+}
+
+.header .header-content .mouse-down {
+  font-size: 0.9em; /* CONTROL MOUSE SIZE */
+  border: 2px solid #fff;
+  display: block;
+  width: 1.7em;
+  height: 2.8em;
+  border-radius: 0.9em;
+  bottom: 0;
+  align-self: center;
+  text-decoration: none;
+  transition: border 0.2s ease-out;
+  position: absolute;
+}
+
+.header .header-content .mouse-down:hover {
+  border: 2px solid #6ff;
+}
+
+.header .header-content .mouse-down span {
+  display: block;
+  height: 0.3em;
+  width: 0.2em;
+  background: #fff;
+  margin: 0.7em auto 0;
+  border-radius: 0.4em;
+}
+
+.header .header-content .mouse-down span {
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+  animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.header .header-content .mouse-down:hover span {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+
+@-webkit-keyframes scroll {
+  0%,
+  20% {
+    -webkit-transform: translateY(0) scaleY(1);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(1.2em) scaleY(1.5);
+    opacity: 0.01;
+  }
+}
+
+@keyframes scroll {
+  0%,
+  20% {
+    transform: translateY(0) scaleY(1);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1.2em) scaleY(1.5);
+    opacity: 0.01;
+  }
 }
