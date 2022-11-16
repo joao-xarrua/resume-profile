@@ -38,12 +38,13 @@
   }
 
   .projects ul::before {
-    height: 540px;
+    height: 455px;
   }
 
   .projects ul li {
     padding: 20px;
-    background: url("../img/project-item-responsive-bg.svg") 0 0 no-repeat;
+    background-image: none;
+    border: 1px solid #000;
   }
 }
 
@@ -83,12 +84,6 @@
 
   .projects ul::before {
     display: none;
-  }
-
-  .projects ul li {
-    padding: 20px;
-    background-image: none;
-    border: 1px solid #000;
   }
 
   .projects ul li::before {
