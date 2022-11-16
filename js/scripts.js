@@ -47,7 +47,7 @@ function initNavbarTopOnScroll() {
   const barraDeNavegacao = document.querySelector(".navbar");
 
   function verifyOnScroll() {
-    if (window.scrollY > barraDeNavegacao.clientHeight) {
+    if (window.scrollY > 10) {
       barraDeNavegacao.classList.add("barra-ativa");
     } else {
       barraDeNavegacao.classList.remove("barra-ativa");
